@@ -1,0 +1,15 @@
+python-dotenv
+langchain
+openai
+pyaudio
+SpeechRecognition
+pinecone-client
+sentence-transformers
+pinecone-client[grpc]
+torch
+gTTS
+playsound
+
+# macOS-specific requirements
+# Uncomment the following line if you're on macOS
+# PyObjC
