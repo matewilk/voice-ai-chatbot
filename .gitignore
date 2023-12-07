@@ -16,3 +16,9 @@ env/
 
 # Environment variables
 .env
+
+# New Relic agent config (containing license key)
+newrelic.ini
+
+# Logs
+newrelic-python-agent.log

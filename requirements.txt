@@ -10,6 +10,10 @@ torch
 gTTS
 playsound
 
+# New Relic AI observability + (NR Python Agent)
+git+https://github.com/newrelic/nr-openai-observability@staging
+
+
 # macOS-specific requirements
 # Uncomment the following line if you're on macOS
-# PyObjC
+PyObjC
