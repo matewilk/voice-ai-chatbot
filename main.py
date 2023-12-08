@@ -1,12 +1,15 @@
 # main.py
 
+from dotenv import load_dotenv
+# Load environment variables
+load_dotenv()
+
 # Initialize New Relic
 import newrelic.agent
 newrelic.agent.initialize('newrelic.ini')
 newrelic.agent.register_application(timeout=10)
 
 import os
-from dotenv import load_dotenv
 from langchain.llms import OpenAI
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
@@ -17,9 +20,6 @@ from nr_openai_observability import monitor
 
 # Initialize New Relic OpenAI Observability
 monitor.initialization()
-
-# Load environment variables
-load_dotenv()
 
 # Get OpenAI API key from environment variables
 openai_api_key = os.getenv('OPENAI_API_KEY')

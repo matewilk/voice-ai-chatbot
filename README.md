@@ -32,7 +32,8 @@ brew install flac
 ```
 
 ##### Environment Variables:
-Set up `.env` with your API keys and other configurations.
+Set up `.env` with your API keys and other configurations. 
+Find the example `.env.example` file in the root directory of this project.
 ```bash
 OPENAI_API_KEY={YOUR_OPENAI_API_KEY}
 PINECONE_API_KEY={YOUR_PINECONE_API_KEY}
@@ -49,9 +50,10 @@ TOP_LEVEL_DOMAIN=co.uk # Top level domain for answer generation e.g. "com", "co.
 Make sure  you have your New Relic account and API key ready, if not you can create one [here](https://newrelic.com/signup).
 To get your New Relic license key, follow the instructions [here](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/).
 
-Generate New Relic configuration file:
+Add New Relic license key and app name to `.env` file:
 ```bash
-newrelic-admin generate-config {NEW_RELIC_LICENSE_KEY} newrelic.ini
+NEW_RELIC_LICENSE_KEY={YOUR_NEW_RELIC_LICENSE_KEY}
+NEW_RELIC_APP_NAME={YOUR_NEW_RELIC_APP_NAME}
 ```
 
 Uncomment the following lines in `newrelic.ini`:
